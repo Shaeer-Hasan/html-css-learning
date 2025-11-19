@@ -35,24 +35,28 @@
   text-decoration: none;
   gap: 25px;
   margin-inline: 2%;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
-.buttonContainer {
-  width: auto;
-  /* margin: 25px; */
-}
+/* .buttonContainer {
+  width: 20%;
+} */
 #buttonDetails {
-  width: 150px;
-  padding: 12px;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
   background-color: rgb(35, 166, 240);
-
   color: white;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 14px;
   border-radius: 5%;
   border: none;
-  margin-right: 20px;
+  /* margin-right: 20px; */
+}
+#buttonDetails:active {
+  background-color: #fff;
+  color: #23a6f0;
 }
 .descriptionContainer {
   display: flex;
@@ -112,13 +116,6 @@
   margin-bottom: 20px;
   padding: 12px;
 }
-.featureHeading {
-  color: rgb(37, 43, 66);
-  font-size: 1rem;
-  letter-spacing: 0.1px;
-  font-weight: bold;
-  margin-bottom: 10%;
-}
 .featureOne hr {
   width: 3.1rem;
   text-align: left;
@@ -132,7 +129,7 @@
 }
 .featureDesc {
   color: rgb(55, 55, 55);
-  font-size: 5rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 .featureTwo {
@@ -161,10 +158,11 @@
 }
 .featureHeading {
   color: rgb(37, 43, 66);
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1px;
   font-weight: bold;
   margin-bottom: 8px;
+  text-transform: capitalize;
 }
 .featureTwo hr {
   width: 3.1rem;
@@ -176,11 +174,7 @@
   margin-bottom: 10%;
   margin-top: 10%;
 }
-.featureDesc {
-  color: rgb(55, 55, 55);
-  font-size: 0.8rem;
-  font-weight: 400;
-}
+
 .featureThree {
   display: block;
   width: 15rem;
@@ -206,10 +200,11 @@
 }
 .featureThree h5 {
   color: rgb(255, 255, 255);
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1px;
   font-weight: bold;
   margin-bottom: 8px;
+  text-transform: capitalize;
 }
 .featureThree hr {
   width: 3.1rem;
@@ -223,7 +218,7 @@
 }
 .featureThree p {
   color: rgb(255, 255, 255);
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 .PackageContainer {
@@ -239,8 +234,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 60%;
-  padding-left: 5%;
 }
 .packageSubContainer hr {
   width: 5.8rem;
@@ -277,7 +270,7 @@
 }
 .imageSubContainer {
   position: relative;
-  width: 90%;
+  /* width: 90%; */
 }
 .blueBar {
   width: 3.2rem;
@@ -316,17 +309,18 @@
   align-items: center;
   justify-content: flex-start;
   padding-top: 5%;
-  width: 95vw;
+  width: 90vw;
   align-self: center;
   margin-inline: auto;
 }
 .mainExpert {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding-bottom: 5%;
-  padding-right: 45%;
+  /* padding-right: 45%; */
 }
 #expertTag {
   color: rgb(35, 166, 240);
@@ -341,6 +335,7 @@
   margin-bottom: 2%;
 }
 #expertDesc {
+  width: 100%;
   color: rgb(115, 115, 115);
   font-weight: 400;
   font-size: 1rem;
@@ -401,7 +396,7 @@
 .OnlineContainer {
   /* background-color: #252b42; */
   align-self: center;
-  width: 95vw;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -410,12 +405,13 @@
   margin-inline: auto;
 }
 .mainOnline {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding-bottom: 5%;
-  padding-right: 35%;
+  /* padding-right: 35%; */
 }
 #onlineTag {
   color: rgb(35, 166, 240);
@@ -435,6 +431,7 @@
   font-size: 1rem;
 }
 .onlineDescRow {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -468,6 +465,7 @@
   justify-content: flex-start;
 }
 .headerRow {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -483,17 +481,18 @@
   align-items: center;
   justify-content: space-evenly;
   background-color: #252b42;
-  width: 50px;
-  height: 26px;
-  border-radius: 20%;
+  border-radius: 8%;
+  padding-inline: 12px;
+  padding-block: 10px;
 }
 .ratingLabel i {
   color: rgb(243, 205, 3);
 }
 .ratingValue {
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   font-weight: 400;
+  margin-inline: 5px;
 }
 .topicDetail {
   color: #252b42;
@@ -504,6 +503,8 @@
   color: #737373;
   font-size: 0.8rem;
   font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 .saleRow {
   display: flex;
@@ -589,6 +590,10 @@
   font-size: 14px;
   font-weight: 700;
 }
+.cardButton:hover {
+  background-color: #23a6f0;
+  color: #fff;
+}
 .saleLabel {
   background-color: #e74040;
   color: white;
@@ -632,7 +637,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 10%;
 }
 .mainFooter {
@@ -662,10 +667,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 43rem;
-  height: 3.6rem;
   padding-top: 5%;
   padding-bottom: 1%;
+  gap: 5%;
 }
 #inputBarDetail {
   width: 35.6rem;
@@ -685,16 +689,19 @@
   font-weight: 400;
   font-size: 14px;
 }
+#inputButton:active {
+  color: #23a6f0;
+  background-color: #fff;
+}
 .footerDetail {
   background-color: #252b42;
   padding: 3%;
 }
 .Container {
   display: grid;
-  gap: 1.8rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items: self-start;
-  padding-left: 10%;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
 }
 .firstGrid {
   margin-bottom: 15px;
@@ -748,271 +755,195 @@ a {
   text-align: center;
 }
 /*  */
-
 @media only screen and (max-width: 600px) {
-  .main {
-    width: 100%;
-    padding: 100px;
-  }
-  .headerContainer {
-    width: 100%;
-    justify-content: space-between;
-    padding-bottom: 10%;
-  }
-  #heading {
-    font-size: 3rem;
-  }
-  .linkContainer {
-    display: none;
-  }
-  #buttonDetails {
-    padding: 15%;
-    font-size: 1.1rem;
-  }
-  #welcomeDetail {
-    font-size: 5rem;
-    padding-bottom: 5%;
-  }
-  #descheadDetail {
-    font-size: 4rem;
-  }
-  #descDetail {
-    font-size: 2rem;
-  }
   .featureContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 10%;
-    gap: 0.2rem;
   }
-  .featureOne {
-    width: 50rem;
-    height: 47rem;
-    padding: 10%;
+  #heading {
+    font-size: 1.3rem;
   }
-  .featureOne hr {
-    width: 5rem;
-    border-width: 5px;
-  }
-  .featureTwo {
-    width: 50rem;
-    height: 47rem;
-    padding: 10%;
-  }
-  .featureTwo hr {
-    width: 5rem;
-    border-width: 5px;
-    margin-bottom: 5%;
-  }
-  .featureThree {
-    width: 50rem;
-    height: 47rem;
-    padding: 10%;
-  }
-  .featureThree hr {
-    width: 5rem;
-    border-width: 5px;
-  }
-  .firstIcon {
-    width: 30%;
-    height: 30%;
-  }
-  .firstIcon i {
-    padding: 30%;
-    font-size: 5rem;
-  }
-  .featureHeading {
-    font-size: 5rem;
-  }
-  .featureDesc {
-    font-size: 3rem;
-  }
-  .SecondIcon {
-    width: 30%;
-    height: 30%;
-  }
-  .SecondIcon i {
-    padding: 30%;
-    font-size: 5rem;
-  }
-  .thirdIcon {
-    width: 30%;
-    height: 30%;
-  }
-  .thirdIcon i {
-    padding: 30%;
-    font-size: 5rem;
-  }
-  .featureThree h5 {
-    font-size: 5rem;
-  }
-  .featureThree p {
-    font-size: 3rem;
+  .main {
+    padding: 8%;
   }
   .PackageContainer {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-bottom: 20%;
-  }
-
-  #packageDesc {
-    font-size: 3rem;
-  }
-  #packageButton {
-    display: none;
-  }
-  .packageSubContainer {
-    padding-bottom: 15%;
-  }
-  .packageSubContainer hr {
-    width: 8rem;
-    border-width: 5px;
-  }
-  #packageHead {
-    font-size: 7rem;
+    padding: 8%;
   }
   .expertContainer {
-    padding-left: 10%;
-    padding-bottom: 20%;
-    justify-content: center;
-  }
-  .mainExpert {
-    padding-right: 0%;
-    padding-bottom: 20%;
-  }
-  #expertTag {
-    font-size: 2.5rem;
-  }
-  #expertTitle {
-    font-size: 5rem;
-  }
-  #expertDesc {
-    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    padding: 8%;
   }
   .expertDetailCard {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-  }
-  .card_1 {
-    /* width: 50rem;
-    height: 42rem; */
-    padding: 10%;
-  }
-  .card_2 {
-    /* width: 50rem;
-    height: 42rem; */
-    padding: 10%;
-  }
-  .cardImage {
-    width: 10rem;
-    height: 10rem;
-  }
-  .cardDesc {
-    font-size: 2.5rem;
-  }
-  .cardName {
-    font-size: 2rem;
-  }
-  .cardDesignation {
-    font-size: 1.5rem;
+    margin-top: 10%;
   }
   .OnlineContainer {
-    padding-top: 100%;
-  }
-  .mainOnline {
-    align-items: flex-start;
-    justify-content: center;
-    padding-right: 0%;
-    /* padding-right: 30%; */
-  }
-  #onlineTag {
-    font-size: 3rem;
-    text-align: left;
-  }
-  #onlineTitle {
-    font-size: 5rem;
-  }
-  #onlineDesc {
-    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
   }
   .onlineDescRow {
     display: flex;
     flex-direction: column;
+    margin-top: 10%;
   }
-  .onlineCard1 {
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #inputBarDetail {
+    width: auto;
+  }
+  .Container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  #buttonDetails {
+    width: 90%;
+  }
+
+  .card_1 {
+    display: block;
+    text-align: center;
+    width: fit-content;
+    height: 17rem;
+  }
+  .cardImage {
+    width: auto;
+    height: 8rem;
+    border-radius: 50%;
+    margin-bottom: 10%;
+  }
+  .cardDesc {
+    color: rgb(115, 115, 115);
+    font-weight: 400;
+    font-size: 0.8rem;
+    margin-bottom: 5%;
+  }
+  .ratingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 5px; */
+    margin-bottom: 5%;
+  }
+  .ratingContainer i {
+    color: rgb(243, 205, 3);
+  }
+  .cardName {
+    color: rgb(37, 43, 66);
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 5%;
+  }
+  .cardDesignation {
+    color: rgb(115, 115, 115);
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .card_2 {
+    display: block;
+    text-align: center;
+    width: fit-content;
+    height: 17rem;
+  }
+  .headerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+  }
+  .linkContainer {
+    display: none;
+  }
+  #welcomeDetail {
+    font-size: 1.3rem;
+  }
+  .packageSubContainer {
     width: 100%;
-    padding-bottom: 10%;
-    overflow: hidden;
   }
-  #card1Detail {
-    width: 100%;
-    height: 100%;
+  #packageHead {
+    font-size: 1.4rem;
+    margin-top: 25px;
   }
-  .imageIcons {
-    z-index: 5;
-    bottom: 45%;
+  #descheadDetail {
+    color: white;
+    font-size: 1.8rem;
+    font-style: normal;
+    margin-top: 25px;
+  }
+  #descDetail {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+  .mainExpert {
+    padding-right: 0%;
+  }
+  #expertTitle {
+    font-size: 1.5rem;
+  }
+  .mainOnline {
+    padding-right: 0%;
+  }
+  #onlineTitle {
+    font-size: 1.5rem;
+  }
+  #footerTitle {
+    font-size: 1.5rem;
+  }
+  .imageSubContainer {
+    margin-top: 10%;
+  }
+  .blueBar {
+    left: -50px;
+  }
+  #graphDetail {
+    left: -10%;
+  }
+  #dataDetail {
+    left: -5%;
+  }
+  .pinkBar {
+    right: -13%;
+  }
+  #mainDetail {
     right: 30%;
   }
-  .onlineDetail {
+  .footerDetail {
+    padding: 8%;
     width: 100%;
+  }
+  .mainFooter {
+    align-items: flex-start;
+  }
+  .onlineCard1 {
+    width: 90%;
+    height: auto;
   }
   .headerRow {
     justify-content: space-around;
-    gap: 100%;
-  }
-  #subDetail {
-    font-size: 2rem;
-  }
-  .topicDetail {
-    font-size: 3.5rem;
-  }
-  .paraDetail {
-    font-size: 2rem;
-  }
-  .saleRow i {
-    font-size: 1rem;
-  }
-  .saleValue {
-    font-size: 1rem;
-    font-weight: bolder;
-  }
-  .cost1 .cost2 {
-    font-size: 1.5rem;
-  }
-  .detailRow {
-    font-size: 1.5rem;
-  }
-  .cardButton {
-    padding: 20px 30px;
-    font-size: 1.5rem;
-  }
-  .mainFooter {
-    padding-left: 20%;
-  }
-  #footerTag {
-    font-size: 2rem;
-  }
-  #footerTitle {
-    font-size: 3.5rem;
-  }
-  #footerDesc {
-    font-size: 1.5rem;
-  }
-  .inputBar {
-    padding-left: 20%;
-  }
-  .footerDetail {
-    width: 100%;
-    padding: 100px 80px;
-  }
-  .Container {
-    grid-template-columns: 1fr;
-    align-items: center;
+    gap: 200%;
   }
   #last {
-    text-align: left;
+    font-size: 0.8rem;
+  }
+  .imageIcons {
+    left: 30%;
+  }
+  .paraDetail {
+    margin-top: 2%;
   }
 }
