@@ -44,7 +44,7 @@
 #buttonDetails {
   display: inline-flex;
   align-items: center;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   background-color: rgb(35, 166, 240);
   color: white;
   text-transform: uppercase;
@@ -52,7 +52,7 @@
   font-size: 14px;
   border-radius: 5%;
   border: none;
-  /* margin-right: 20px; */
+  margin-right: 10px;
 }
 #buttonDetails:active {
   background-color: #fff;
@@ -95,11 +95,11 @@
 }
 .featureOne {
   display: block;
-  width: 15rem;
-  height: 13rem;
+  /* width: 15rem;
+  height: 13rem; */
   background-color: white;
-  padding: 30px;
-  margin: 20px;
+  /* padding: 10px;
+  margin: 15px; */
   border-radius: 10px;
 }
 .firstIcon {
@@ -134,11 +134,11 @@
 }
 .featureTwo {
   display: block;
-  width: 15rem;
-  height: 13rem;
+  /* width: 15rem;
+  height: 13rem; */
   background-color: white;
-  padding: 30px;
-  margin: 15px;
+  /* padding: 10px;
+  margin: 15px; */
   border-radius: 10px;
 }
 .SecondIcon {
@@ -177,11 +177,11 @@
 
 .featureThree {
   display: block;
-  width: 15rem;
-  height: 13rem;
+  /* width: 15rem;
+  height: 13rem; */
   background-color: rgb(35, 166, 240);
-  padding: 30px;
-  margin: 15px;
+  /* padding: 10px; */
+  /* margin: 15px; */
   border-radius: 10px;
 }
 .thirdIcon {
@@ -242,7 +242,6 @@
   border-color: rgb(231, 64, 64);
   border-image: initial;
   margin-left: 5%;
-  margin-bottom: 10%;
 }
 #packageHead {
   color: rgb(37, 43, 66);
@@ -346,17 +345,17 @@
   justify-content: center;
   padding-bottom: 10%;
   padding-right: 1%;
-  gap: 5rem;
+  /* gap: 5rem; */
 }
 .card_1 {
   display: block;
   text-align: center;
-  width: 25rem;
-  height: 17rem;
+  width: 100%;
+  height: auto;
 }
 .cardImage {
-  width: 8rem;
-  height: 8rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   margin-bottom: 10%;
 }
@@ -390,8 +389,8 @@
 .card_2 {
   display: block;
   text-align: center;
-  width: 25rem;
-  height: 17rem;
+  width: 100%;
+  height: auto;
 }
 .OnlineContainer {
   /* background-color: #252b42; */
@@ -475,6 +474,7 @@
   color: #23a6f0;
   font-size: 0.8rem;
   font-weight: 700;
+  margin-bottom: 0px;
 }
 .ratingLabel {
   display: flex;
@@ -482,17 +482,22 @@
   justify-content: space-evenly;
   background-color: #252b42;
   border-radius: 8%;
-  padding-inline: 12px;
-  padding-block: 10px;
+  width: 25%;
+  /* padding-inline: 12px; */
+  /* padding-block: 10px; */
 }
 .ratingLabel i {
   color: rgb(243, 205, 3);
+  font-size: 0.8rem;
 }
 .ratingValue {
   color: white;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 400;
-  margin-inline: 5px;
+
+  margin-bottom: 0px;
+
+  /* margin-inline: 5px; */
 }
 .topicDetail {
   color: #252b42;
@@ -526,7 +531,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-top: 7%;
+  /* margin-top: 5%; */
   gap: 5px;
 }
 .cost1 {
@@ -542,9 +547,8 @@
 .detailRow {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 182px;
-  height: 46px;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
 }
 .detailRow1 {
   display: flex;
@@ -556,22 +560,19 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 71px;
-  height: 16px;
   gap: 5px;
 }
 .detailRow3 {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 55px;
-  height: 16px;
+  justify-content: space-around;
   gap: 5px;
 }
 .detailElements {
   color: #737373;
   font-size: 0.75rem;
   font-weight: 400;
+  margin-bottom: 0px;
 }
 .detailRow1 i {
   color: #23a6f0;
@@ -609,19 +610,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 3.1rem;
-  height: 1.5rem;
+  /* width: 3.1rem;
+  height: 1.5rem; */
 }
 .imageIcons {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  z-index: 1;
-  left: 20%;
-  top: 45%;
-  gap: 10px;
 }
 .imageIcons i {
   display: flex;
@@ -697,12 +693,12 @@
   background-color: #252b42;
   padding: 3%;
 }
-.Container {
+/* .footerSubContainer {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   align-items: center;
   justify-content: center;
-}
+} */
 .firstGrid {
   margin-bottom: 15px;
 }
@@ -712,7 +708,7 @@
 .gridHeader {
   color: #fff;
   font-size: 1.5rem;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 #gridDesc {
   color: #fff;
@@ -755,7 +751,7 @@ a {
   text-align: center;
 }
 /*  */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .featureContainer {
     display: flex;
     flex-direction: column;
@@ -834,7 +830,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* gap: 5px; */
     margin-bottom: 5%;
   }
   .ratingContainer i {
@@ -946,4 +941,4 @@ a {
   .paraDetail {
     margin-top: 2%;
   }
-}
+} */
